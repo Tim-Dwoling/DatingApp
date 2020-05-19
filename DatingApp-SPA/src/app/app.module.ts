@@ -5,7 +5,7 @@ import {FormsModule} from '@angular/forms';
 import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './Nav/Nav.component';
@@ -70,7 +70,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
       AlertifyService,
       MemberDetailResolver,
       MemberListResolver,
-      {provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig}
+      { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
    ],
    bootstrap: [
       AppComponent
